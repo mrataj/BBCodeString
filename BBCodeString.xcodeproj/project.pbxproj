@@ -107,8 +107,8 @@
 		11070C2916ECD16300CFFF3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		11070C3016ECD23000CFFF3C /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
 		11070C3116ECD23000CFFF3C /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
-		11070C3316ECD4FB00CFFF3C /* BBCodeStringDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCodeStringDelegate.h; sourceTree = SOURCE_ROOT; };
 		11070C3616ECDC0C00CFFF3C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		113C28E516ECE3D7006BF0F1 /* BBCodeStringDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCodeStringDelegate.h; path = BBCodeString/BBCodeStringDelegate.h; sourceTree = SOURCE_ROOT; };
 		11A7586916ECC4A800CC5AAD /* libBBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7586C16ECC4A800CC5AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,7 +236,7 @@
 				11070BE816ECC70100CFFF3C /* BBCodeParser */,
 				11070BF216ECC70100CFFF3C /* BBCodeString.h */,
 				11070BF316ECC70100CFFF3C /* BBCodeString.m */,
-				11070C3316ECD4FB00CFFF3C /* BBCodeStringDelegate.h */,
+				113C28E516ECE3D7006BF0F1 /* BBCodeStringDelegate.h */,
 				11070BFD16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.h */,
 				11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */,
 				11A7586F16ECC4A800CC5AAD /* Supporting Files */,
@@ -615,6 +615,7 @@
 				11070C2D16ECD16300CFFF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeString" */ = {
 			isa = XCConfigurationList;
