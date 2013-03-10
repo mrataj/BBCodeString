@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BBCodeString : NSAttributedString
+@interface BBCodeString : NSMutableAttributedString
+
+@property (nonatomic, copy) NSString *bbCode;
+
+- (id)initWithBBCode:(NSString *)bbCode;
 
 @end

@@ -13,9 +13,17 @@
 		11070BF616ECC70100CFFF3C /* BBElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEF16ECC70100CFFF3C /* BBElement.m */; };
 		11070BF716ECC70100CFFF3C /* BBParsingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF116ECC70100CFFF3C /* BBParsingElement.m */; };
 		11070BF816ECC70100CFFF3C /* BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF316ECC70100CFFF3C /* BBCodeString.m */; };
+		11070BFF16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */; };
+		11070C0616ECCA9800CFFF3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C0116ECCA0E00CFFF3C /* UIKit.framework */; };
+		11070C0816ECCC8700CFFF3C /* BBAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEA16ECC70100CFFF3C /* BBAttribute.m */; };
+		11070C0916ECCC8700CFFF3C /* BBCodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEC16ECC70100CFFF3C /* BBCodeParser.m */; };
+		11070C0A16ECCC8700CFFF3C /* BBElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEF16ECC70100CFFF3C /* BBElement.m */; };
+		11070C0B16ECCC8700CFFF3C /* BBParsingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF116ECC70100CFFF3C /* BBParsingElement.m */; };
+		11070C0C16ECCC8700CFFF3C /* BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF316ECC70100CFFF3C /* BBCodeString.m */; };
+		11070C0D16ECCC8700CFFF3C /* NSMutableAttributedString+BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */; };
+		11070C0E16ECCCA400CFFF3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C0116ECCA0E00CFFF3C /* UIKit.framework */; };
 		11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
 		11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */; };
-		11A7587E16ECC4A800CC5AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587D16ECC4A800CC5AAD /* UIKit.framework */; };
 		11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
 		11A7588216ECC4A800CC5AAD /* libBBCodeString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586916ECC4A800CC5AAD /* libBBCodeString.a */; };
 		11A758AC16ECC69F00CC5AAD /* BBCodeStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A758AB16ECC69F00CC5AAD /* BBCodeStringTests.m */; };
@@ -57,11 +65,13 @@
 		11070BF216ECC70100CFFF3C /* BBCodeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCodeString.h; path = BBCodeString/BBCodeString.h; sourceTree = SOURCE_ROOT; };
 		11070BF316ECC70100CFFF3C /* BBCodeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBCodeString.m; path = BBCodeString/BBCodeString.m; sourceTree = SOURCE_ROOT; };
 		11070BF916ECC70A00CFFF3C /* BBCodeString-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BBCodeString-Prefix.pch"; path = "BBCodeString/BBCodeString-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		11070BFD16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+BBCodeString.h"; path = "BBCodeString/NSMutableAttributedString+BBCodeString.h"; sourceTree = SOURCE_ROOT; };
+		11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+BBCodeString.m"; path = "BBCodeString/NSMutableAttributedString+BBCodeString.m"; sourceTree = SOURCE_ROOT; };
+		11070C0116ECCA0E00CFFF3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11A7586916ECC4A800CC5AAD /* libBBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7586C16ECC4A800CC5AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		11A7587D16ECC4A800CC5AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		11A758AA16ECC69F00CC5AAD /* BBCodeStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCodeStringTests.h; path = BBCodeStringTests/BBCodeStringTests.h; sourceTree = SOURCE_ROOT; };
 		11A758AB16ECC69F00CC5AAD /* BBCodeStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBCodeStringTests.m; path = BBCodeStringTests/BBCodeStringTests.m; sourceTree = SOURCE_ROOT; };
 		11A758AD16ECC6AB00CC5AAD /* BBCodeStringTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BBCodeStringTests-Info.plist"; path = "BBCodeStringTests/BBCodeStringTests-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -72,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11070C0616ECCA9800CFFF3C /* UIKit.framework in Frameworks */,
 				11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11070C0E16ECCCA400CFFF3C /* UIKit.framework in Frameworks */,
 				11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */,
-				11A7587E16ECC4A800CC5AAD /* UIKit.framework in Frameworks */,
 				11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */,
 				11A7588216ECC4A800CC5AAD /* libBBCodeString.a in Frameworks */,
 			);
@@ -129,9 +140,9 @@
 		11A7586B16ECC4A800CC5AAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11070C0116ECCA0E00CFFF3C /* UIKit.framework */,
 				11A7586C16ECC4A800CC5AAD /* Foundation.framework */,
 				11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */,
-				11A7587D16ECC4A800CC5AAD /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +153,8 @@
 				11070BE816ECC70100CFFF3C /* BBCodeParser */,
 				11070BF216ECC70100CFFF3C /* BBCodeString.h */,
 				11070BF316ECC70100CFFF3C /* BBCodeString.m */,
+				11070BFD16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.h */,
+				11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */,
 				11A7586F16ECC4A800CC5AAD /* Supporting Files */,
 			);
 			name = BBCodeString;
@@ -274,6 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11070C0816ECCC8700CFFF3C /* BBAttribute.m in Sources */,
+				11070C0916ECCC8700CFFF3C /* BBCodeParser.m in Sources */,
+				11070C0A16ECCC8700CFFF3C /* BBElement.m in Sources */,
+				11070C0B16ECCC8700CFFF3C /* BBParsingElement.m in Sources */,
+				11070C0C16ECCC8700CFFF3C /* BBCodeString.m in Sources */,
+				11070C0D16ECCC8700CFFF3C /* NSMutableAttributedString+BBCodeString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +306,7 @@
 				11070BF616ECC70100CFFF3C /* BBElement.m in Sources */,
 				11070BF716ECC70100CFFF3C /* BBParsingElement.m in Sources */,
 				11070BF816ECC70100CFFF3C /* BBCodeString.m in Sources */,
+				11070BFF16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +406,7 @@
 		11A7589216ECC4A800CC5AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -394,6 +415,7 @@
 				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
 				INFOPLIST_FILE = "BBCodeStringTests/BBCodeStringTests-Info.plist";
 				PRODUCT_NAME = BBCodeStringTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -401,6 +423,7 @@
 		11A7589316ECC4A800CC5AAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -409,6 +432,7 @@
 				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
 				INFOPLIST_FILE = "BBCodeStringTests/BBCodeStringTests-Info.plist";
 				PRODUCT_NAME = BBCodeStringTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

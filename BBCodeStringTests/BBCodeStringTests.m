@@ -7,22 +7,16 @@
 //
 
 #import "BBCodeStringTests.h"
+#import "BBCodeString.h"
 
 @implementation BBCodeStringTests
 
-- (void)setUp
+- (void)testMakeAttributedString
 {
-    [super setUp];
-}
-
-- (void)tearDown
-{    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet");
+    NSString *bbCode = @"[user id=\"42\"]Mary Jones[/user] sent file [file id=\"23\"]Report.pdf[/file] to professor [user id=\"43\"]Gary Durkheim[/user] this morning.\nI hope you see this before afternoon.";
+        
+    BBCodeString *bbCodeString = [[BBCodeString alloc] initWithBBCode:bbCode];
+    STAssertNotNil(bbCodeString, @"Cannot be nil");
 }
 
 @end
