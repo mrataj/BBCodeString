@@ -39,7 +39,14 @@
     [parser setCode:self.bbCode];
     [parser parse];
     
-    [self appendElement:parser.element];
+    _root = parser.element;
+    
+    [self appendElement:_root];
+}
+
+- (BBElement *)getElementByIndex:(NSInteger)characterIndex
+{
+    return [_root elementAtIndex:characterIndex];
 }
 
 - (void)appendElement:(BBElement *)element

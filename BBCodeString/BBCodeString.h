@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "BBCodeStringDelegate.h"
 
+@class BBElement;
+
 @interface BBCodeString : NSObject {
     NSMutableAttributedString *_attributedString;
+    BBElement *_root;
 }
 
 @property (nonatomic, weak) id<BBCodeStringDelegate> layoutProvider;
@@ -18,5 +21,7 @@
 @property (nonatomic, readonly) NSMutableAttributedString *attributedString;
 
 - (id)initWithBBCode:(NSString *)bbCode andLayoutProvider:(id<BBCodeStringDelegate>)layoutProvider;
+
+- (BBElement *)getElementByIndex:(NSInteger)characterIndex;
 
 @end
