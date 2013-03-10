@@ -7,7 +7,13 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "BBCodeStringDelegate.h"
 
-@interface BBCodeStringTests : SenTestCase
+@interface BBCodeStringTests : SenTestCase <BBCodeStringDelegate> {
+    BOOL _userTagFontRequested;
+    BOOL _fileTagFontRequested;
+    BOOL _userTagColorRequested;
+    BOOL _fileTagColorRequested;
+}
 
 @end

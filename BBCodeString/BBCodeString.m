@@ -12,30 +12,30 @@
 
 @implementation BBCodeString
 
-- (id)initWithBBCode:(NSString *)bbCode
+- (id)init
+{
+    @throw @"Call initWithBBCode:andLayoutProvider: instead.";
+}
+
+- (id)initWithBBCode:(NSString *)bbCode andLayoutProvider:(id<BBCodeStringDelegate>)layoutProvider
 {
     self = [super init];
     if (self)
     {
-        self.bbCode = bbCode;
+        _bbCode = bbCode;
+        
+        _layoutProvider = layoutProvider;
         
         [self make];
     }
     return self;
 }
 
-// todo move outside
-- (NSArray *)getTags
-{
-    return [NSArray arrayWithObjects:
-            @"user",
-            @"file",
-            nil];
-}
-
 - (void)make
 {
-    BBCodeParser *parser = [[BBCodeParser alloc] initWithTags:[self getTags]];
+    _attributedString = [[NSMutableAttributedString alloc] init];
+    
+    BBCodeParser *parser = [[BBCodeParser alloc] initWithTags:[self.layoutProvider getSupportedTags]];
     [parser setCode:self.bbCode];
     [parser parse];
     
@@ -90,11 +90,10 @@
     
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:text];
     
-    // todo move outside
-    [string setFont:[UIFont systemFontOfSize:16.0]];
-    [string setColor:[UIColor colorWithWhite:0.1 alpha:1.0]];
+    [string setFont:[self.layoutProvider getFont:element]];
+    [string setColor:[self.layoutProvider getTextColor:element]];
     
-    [self appendAttributedString:string];
+    [_attributedString appendAttributedString:string];
 }
 
 @end

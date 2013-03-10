@@ -31,6 +31,9 @@
 		11070C2616ECD16300CFFF3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2516ECD16300CFFF3C /* Default.png */; };
 		11070C2816ECD16300CFFF3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2716ECD16300CFFF3C /* Default@2x.png */; };
 		11070C2A16ECD16300CFFF3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2916ECD16300CFFF3C /* Default-568h@2x.png */; };
+		11070C3216ECD23000CFFF3C /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070C3116ECD23000CFFF3C /* BBViewController.m */; };
+		11070C3816ECDC1D00CFFF3C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C3616ECDC0C00CFFF3C /* CoreText.framework */; };
+		11070C3916ECDC2600CFFF3C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C3616ECDC0C00CFFF3C /* CoreText.framework */; };
 		11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
 		11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */; };
 		11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
@@ -45,6 +48,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 11070C1216ECD16300CFFF3C;
 			remoteInfo = BBCodeStringApplication;
+		};
+		11070C3416ECDAAE00CFFF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11A7586016ECC4A800CC5AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11A7586816ECC4A800CC5AAD;
+			remoteInfo = BBCodeString;
 		};
 		11A7588016ECC4A800CC5AAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -95,6 +105,10 @@
 		11070C2516ECD16300CFFF3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		11070C2716ECD16300CFFF3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		11070C2916ECD16300CFFF3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		11070C3016ECD23000CFFF3C /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		11070C3116ECD23000CFFF3C /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		11070C3316ECD4FB00CFFF3C /* BBCodeStringDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCodeStringDelegate.h; sourceTree = SOURCE_ROOT; };
+		11070C3616ECDC0C00CFFF3C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		11A7586916ECC4A800CC5AAD /* libBBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7586C16ECC4A800CC5AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11070C3816ECDC1D00CFFF3C /* CoreText.framework in Frameworks */,
 				11070C0616ECCA9800CFFF3C /* UIKit.framework in Frameworks */,
 				11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */,
 			);
@@ -128,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11070C3916ECDC2600CFFF3C /* CoreText.framework in Frameworks */,
 				11070C0E16ECCCA400CFFF3C /* UIKit.framework in Frameworks */,
 				11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */,
 				11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */,
@@ -160,6 +176,8 @@
 			children = (
 				11070C2216ECD16300CFFF3C /* BBAppDelegate.h */,
 				11070C2316ECD16300CFFF3C /* BBAppDelegate.m */,
+				11070C3016ECD23000CFFF3C /* BBViewController.h */,
+				11070C3116ECD23000CFFF3C /* BBViewController.m */,
 				11070C1A16ECD16300CFFF3C /* Supporting Files */,
 			);
 			path = BBCodeStringApplication;
@@ -203,6 +221,7 @@
 		11A7586B16ECC4A800CC5AAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11070C3616ECDC0C00CFFF3C /* CoreText.framework */,
 				11070C0116ECCA0E00CFFF3C /* UIKit.framework */,
 				11A7586C16ECC4A800CC5AAD /* Foundation.framework */,
 				11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */,
@@ -217,6 +236,7 @@
 				11070BE816ECC70100CFFF3C /* BBCodeParser */,
 				11070BF216ECC70100CFFF3C /* BBCodeString.h */,
 				11070BF316ECC70100CFFF3C /* BBCodeString.m */,
+				11070C3316ECD4FB00CFFF3C /* BBCodeStringDelegate.h */,
 				11070BFD16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.h */,
 				11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */,
 				11A7586F16ECC4A800CC5AAD /* Supporting Files */,
@@ -267,6 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				11070C3516ECDAAE00CFFF3C /* PBXTargetDependency */,
 			);
 			name = BBCodeStringApplication;
 			productName = BBCodeStringApplication;
@@ -383,6 +404,7 @@
 			files = (
 				11070C2016ECD16300CFFF3C /* main.m in Sources */,
 				11070C2416ECD16300CFFF3C /* BBAppDelegate.m in Sources */,
+				11070C3216ECD23000CFFF3C /* BBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +442,11 @@
 			isa = PBXTargetDependency;
 			target = 11070C1216ECD16300CFFF3C /* BBCodeStringApplication */;
 			targetProxy = 11070C2E16ECD1C800CFFF3C /* PBXContainerItemProxy */;
+		};
+		11070C3516ECDAAE00CFFF3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11A7586816ECC4A800CC5AAD /* BBCodeString */;
+			targetProxy = 11070C3416ECDAAE00CFFF3C /* PBXContainerItemProxy */;
 		};
 		11A7588116ECC4A800CC5AAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

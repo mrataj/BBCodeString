@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BBCodeStringDelegate.h"
 
-@interface BBCodeString : NSMutableAttributedString
+@interface BBCodeString : NSObject {
+    NSMutableAttributedString *_attributedString;
+}
 
-@property (nonatomic, copy) NSString *bbCode;
+@property (nonatomic, weak) id<BBCodeStringDelegate> layoutProvider;
+@property (nonatomic, readonly, copy) NSString *bbCode;
+@property (nonatomic, readonly) NSMutableAttributedString *attributedString;
 
-- (id)initWithBBCode:(NSString *)bbCode;
+- (id)initWithBBCode:(NSString *)bbCode andLayoutProvider:(id<BBCodeStringDelegate>)layoutProvider;
 
 @end
