@@ -22,6 +22,15 @@
 		11070C0C16ECCC8700CFFF3C /* BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF316ECC70100CFFF3C /* BBCodeString.m */; };
 		11070C0D16ECCC8700CFFF3C /* NSMutableAttributedString+BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */; };
 		11070C0E16ECCCA400CFFF3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C0116ECCA0E00CFFF3C /* UIKit.framework */; };
+		11070C1516ECD16300CFFF3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C0116ECCA0E00CFFF3C /* UIKit.framework */; };
+		11070C1616ECD16300CFFF3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
+		11070C1816ECD16300CFFF3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11070C1716ECD16300CFFF3C /* CoreGraphics.framework */; };
+		11070C1E16ECD16300CFFF3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11070C1C16ECD16300CFFF3C /* InfoPlist.strings */; };
+		11070C2016ECD16300CFFF3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070C1F16ECD16300CFFF3C /* main.m */; };
+		11070C2416ECD16300CFFF3C /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070C2316ECD16300CFFF3C /* BBAppDelegate.m */; };
+		11070C2616ECD16300CFFF3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2516ECD16300CFFF3C /* Default.png */; };
+		11070C2816ECD16300CFFF3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2716ECD16300CFFF3C /* Default@2x.png */; };
+		11070C2A16ECD16300CFFF3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11070C2916ECD16300CFFF3C /* Default-568h@2x.png */; };
 		11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
 		11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */; };
 		11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
@@ -30,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		11070C2E16ECD1C800CFFF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11A7586016ECC4A800CC5AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11070C1216ECD16300CFFF3C;
+			remoteInfo = BBCodeStringApplication;
+		};
 		11A7588016ECC4A800CC5AAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11A7586016ECC4A800CC5AAD /* Project object */;
@@ -68,6 +84,17 @@
 		11070BFD16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+BBCodeString.h"; path = "BBCodeString/NSMutableAttributedString+BBCodeString.h"; sourceTree = SOURCE_ROOT; };
 		11070BFE16ECC9B300CFFF3C /* NSMutableAttributedString+BBCodeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+BBCodeString.m"; path = "BBCodeString/NSMutableAttributedString+BBCodeString.m"; sourceTree = SOURCE_ROOT; };
 		11070C0116ECCA0E00CFFF3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11070C1316ECD16300CFFF3C /* BBCodeStringApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCodeStringApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11070C1716ECD16300CFFF3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11070C1B16ECD16300CFFF3C /* BBCodeStringApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBCodeStringApplication-Info.plist"; sourceTree = "<group>"; };
+		11070C1D16ECD16300CFFF3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11070C1F16ECD16300CFFF3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11070C2116ECD16300CFFF3C /* BBCodeStringApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBCodeStringApplication-Prefix.pch"; sourceTree = "<group>"; };
+		11070C2216ECD16300CFFF3C /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		11070C2316ECD16300CFFF3C /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		11070C2516ECD16300CFFF3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		11070C2716ECD16300CFFF3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		11070C2916ECD16300CFFF3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		11A7586916ECC4A800CC5AAD /* libBBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7586C16ECC4A800CC5AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +105,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		11070C1016ECD16300CFFF3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11070C1516ECD16300CFFF3C /* UIKit.framework in Frameworks */,
+				11070C1616ECD16300CFFF3C /* Foundation.framework in Frameworks */,
+				11070C1816ECD16300CFFF3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11A7586616ECC4A800CC5AAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,11 +155,36 @@
 			path = BBCodeString/BBCodeParser;
 			sourceTree = SOURCE_ROOT;
 		};
+		11070C1916ECD16300CFFF3C /* BBCodeStringApplication */ = {
+			isa = PBXGroup;
+			children = (
+				11070C2216ECD16300CFFF3C /* BBAppDelegate.h */,
+				11070C2316ECD16300CFFF3C /* BBAppDelegate.m */,
+				11070C1A16ECD16300CFFF3C /* Supporting Files */,
+			);
+			path = BBCodeStringApplication;
+			sourceTree = "<group>";
+		};
+		11070C1A16ECD16300CFFF3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11070C1B16ECD16300CFFF3C /* BBCodeStringApplication-Info.plist */,
+				11070C1C16ECD16300CFFF3C /* InfoPlist.strings */,
+				11070C1F16ECD16300CFFF3C /* main.m */,
+				11070C2116ECD16300CFFF3C /* BBCodeStringApplication-Prefix.pch */,
+				11070C2516ECD16300CFFF3C /* Default.png */,
+				11070C2716ECD16300CFFF3C /* Default@2x.png */,
+				11070C2916ECD16300CFFF3C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		11A7585E16ECC4A800CC5AAD = {
 			isa = PBXGroup;
 			children = (
 				11A7586E16ECC4A800CC5AAD /* BBCodeString */,
 				11A7588316ECC4A800CC5AAD /* BBCodeStringTests */,
+				11070C1916ECD16300CFFF3C /* BBCodeStringApplication */,
 				11A7586B16ECC4A800CC5AAD /* Frameworks */,
 				11A7586A16ECC4A800CC5AAD /* Products */,
 			);
@@ -133,6 +195,7 @@
 			children = (
 				11A7586916ECC4A800CC5AAD /* libBBCodeString.a */,
 				11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */,
+				11070C1316ECD16300CFFF3C /* BBCodeStringApplication.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +206,7 @@
 				11070C0116ECCA0E00CFFF3C /* UIKit.framework */,
 				11A7586C16ECC4A800CC5AAD /* Foundation.framework */,
 				11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */,
+				11070C1716ECD16300CFFF3C /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +256,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		11070C1216ECD16300CFFF3C /* BBCodeStringApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11070C2B16ECD16300CFFF3C /* Build configuration list for PBXNativeTarget "BBCodeStringApplication" */;
+			buildPhases = (
+				11070C0F16ECD16300CFFF3C /* Sources */,
+				11070C1016ECD16300CFFF3C /* Frameworks */,
+				11070C1116ECD16300CFFF3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BBCodeStringApplication;
+			productName = BBCodeStringApplication;
+			productReference = 11070C1316ECD16300CFFF3C /* BBCodeStringApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
 		11A7586816ECC4A800CC5AAD /* BBCodeString */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A7588E16ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeString" */;
@@ -221,6 +302,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				11070C2F16ECD1C800CFFF3C /* PBXTargetDependency */,
 				11A7588116ECC4A800CC5AAD /* PBXTargetDependency */,
 			);
 			name = BBCodeStringTests;
@@ -251,11 +333,23 @@
 			targets = (
 				11A7586816ECC4A800CC5AAD /* BBCodeString */,
 				11A7587916ECC4A800CC5AAD /* BBCodeStringTests */,
+				11070C1216ECD16300CFFF3C /* BBCodeStringApplication */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		11070C1116ECD16300CFFF3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11070C1E16ECD16300CFFF3C /* InfoPlist.strings in Resources */,
+				11070C2616ECD16300CFFF3C /* Default.png in Resources */,
+				11070C2816ECD16300CFFF3C /* Default@2x.png in Resources */,
+				11070C2A16ECD16300CFFF3C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11A7587716ECC4A800CC5AAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +377,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		11070C0F16ECD16300CFFF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11070C2016ECD16300CFFF3C /* main.m in Sources */,
+				11070C2416ECD16300CFFF3C /* BBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11A7586516ECC4A800CC5AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +416,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		11070C2F16ECD1C800CFFF3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11070C1216ECD16300CFFF3C /* BBCodeStringApplication */;
+			targetProxy = 11070C2E16ECD1C800CFFF3C /* PBXContainerItemProxy */;
+		};
 		11A7588116ECC4A800CC5AAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11A7586816ECC4A800CC5AAD /* BBCodeString */;
@@ -329,9 +437,42 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		11070C1C16ECD16300CFFF3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11070C1D16ECD16300CFFF3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		11070C2C16ECD16300CFFF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBCodeStringApplication/BBCodeStringApplication-Prefix.pch";
+				INFOPLIST_FILE = "BBCodeStringApplication/BBCodeStringApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		11070C2D16ECD16300CFFF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBCodeStringApplication/BBCodeStringApplication-Prefix.pch";
+				INFOPLIST_FILE = "BBCodeStringApplication/BBCodeStringApplication-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		11A7588C16ECC4A800CC5AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,7 +547,7 @@
 		11A7589216ECC4A800CC5AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BBCodeStringApplication.app/BBCodeStringApplication";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -423,7 +564,7 @@
 		11A7589316ECC4A800CC5AAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BBCodeStringApplication.app/BBCodeStringApplication";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -440,6 +581,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11070C2B16ECD16300CFFF3C /* Build configuration list for PBXNativeTarget "BBCodeStringApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11070C2C16ECD16300CFFF3C /* Debug */,
+				11070C2D16ECD16300CFFF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeString" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
