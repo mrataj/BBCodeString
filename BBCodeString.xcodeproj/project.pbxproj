@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11070BE716ECC6EB00CFFF3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11070BE516ECC6EB00CFFF3C /* InfoPlist.strings */; };
+		11070BF416ECC70100CFFF3C /* BBAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEA16ECC70100CFFF3C /* BBAttribute.m */; };
+		11070BF516ECC70100CFFF3C /* BBCodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEC16ECC70100CFFF3C /* BBCodeParser.m */; };
+		11070BF616ECC70100CFFF3C /* BBElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BEF16ECC70100CFFF3C /* BBElement.m */; };
+		11070BF716ECC70100CFFF3C /* BBParsingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF116ECC70100CFFF3C /* BBParsingElement.m */; };
+		11070BF816ECC70100CFFF3C /* BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 11070BF316ECC70100CFFF3C /* BBCodeString.m */; };
 		11A7586D16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
-		11A7587216ECC4A800CC5AAD /* BBCodeStringBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11A7587116ECC4A800CC5AAD /* BBCodeStringBuilder.h */; };
-		11A7587416ECC4A800CC5AAD /* BBCodeStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7587316ECC4A800CC5AAD /* BBCodeStringBuilder.m */; };
 		11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */; };
 		11A7587E16ECC4A800CC5AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7587D16ECC4A800CC5AAD /* UIKit.framework */; };
 		11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586C16ECC4A800CC5AAD /* Foundation.framework */; };
-		11A7588216ECC4A800CC5AAD /* libBBCodeStringBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586916ECC4A800CC5AAD /* libBBCodeStringBuilder.a */; };
-		11A7588816ECC4A800CC5AAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11A7588616ECC4A800CC5AAD /* InfoPlist.strings */; };
-		11A7588B16ECC4A800CC5AAD /* BBCodeStringBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7588A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.m */; };
+		11A7588216ECC4A800CC5AAD /* libBBCodeString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A7586916ECC4A800CC5AAD /* libBBCodeString.a */; };
+		11A758AC16ECC69F00CC5AAD /* BBCodeStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A758AB16ECC69F00CC5AAD /* BBCodeStringTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,25 +38,33 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				11A7587216ECC4A800CC5AAD /* BBCodeStringBuilder.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11A7586916ECC4A800CC5AAD /* libBBCodeStringBuilder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeStringBuilder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11070BE616ECC6EB00CFFF3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = BBCodeStringTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		11070BE916ECC70100CFFF3C /* BBAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAttribute.h; sourceTree = "<group>"; };
+		11070BEA16ECC70100CFFF3C /* BBAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAttribute.m; sourceTree = "<group>"; };
+		11070BEB16ECC70100CFFF3C /* BBCodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCodeParser.h; sourceTree = "<group>"; };
+		11070BEC16ECC70100CFFF3C /* BBCodeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCodeParser.m; sourceTree = "<group>"; };
+		11070BED16ECC70100CFFF3C /* BBCodeParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCodeParserDelegate.h; sourceTree = "<group>"; };
+		11070BEE16ECC70100CFFF3C /* BBElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBElement.h; sourceTree = "<group>"; };
+		11070BEF16ECC70100CFFF3C /* BBElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBElement.m; sourceTree = "<group>"; };
+		11070BF016ECC70100CFFF3C /* BBParsingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBParsingElement.h; sourceTree = "<group>"; };
+		11070BF116ECC70100CFFF3C /* BBParsingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBParsingElement.m; sourceTree = "<group>"; };
+		11070BF216ECC70100CFFF3C /* BBCodeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCodeString.h; path = BBCodeString/BBCodeString.h; sourceTree = SOURCE_ROOT; };
+		11070BF316ECC70100CFFF3C /* BBCodeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBCodeString.m; path = BBCodeString/BBCodeString.m; sourceTree = SOURCE_ROOT; };
+		11070BF916ECC70A00CFFF3C /* BBCodeString-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BBCodeString-Prefix.pch"; path = "BBCodeString/BBCodeString-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		11A7586916ECC4A800CC5AAD /* libBBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBBCodeString.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7586C16ECC4A800CC5AAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		11A7587016ECC4A800CC5AAD /* BBCodeStringBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBCodeStringBuilder-Prefix.pch"; sourceTree = "<group>"; };
-		11A7587116ECC4A800CC5AAD /* BBCodeStringBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCodeStringBuilder.h; sourceTree = "<group>"; };
-		11A7587316ECC4A800CC5AAD /* BBCodeStringBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCodeStringBuilder.m; sourceTree = "<group>"; };
-		11A7587A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringBuilderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A7587B16ECC4A800CC5AAD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		11A7587D16ECC4A800CC5AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		11A7588516ECC4A800CC5AAD /* BBCodeStringBuilderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBCodeStringBuilderTests-Info.plist"; sourceTree = "<group>"; };
-		11A7588716ECC4A800CC5AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		11A7588916ECC4A800CC5AAD /* BBCodeStringBuilderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCodeStringBuilderTests.h; sourceTree = "<group>"; };
-		11A7588A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCodeStringBuilderTests.m; sourceTree = "<group>"; };
+		11A758AA16ECC69F00CC5AAD /* BBCodeStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCodeStringTests.h; path = BBCodeStringTests/BBCodeStringTests.h; sourceTree = SOURCE_ROOT; };
+		11A758AB16ECC69F00CC5AAD /* BBCodeStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBCodeStringTests.m; path = BBCodeStringTests/BBCodeStringTests.m; sourceTree = SOURCE_ROOT; };
+		11A758AD16ECC6AB00CC5AAD /* BBCodeStringTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BBCodeStringTests-Info.plist"; path = "BBCodeStringTests/BBCodeStringTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,18 +83,35 @@
 				11A7587C16ECC4A800CC5AAD /* SenTestingKit.framework in Frameworks */,
 				11A7587E16ECC4A800CC5AAD /* UIKit.framework in Frameworks */,
 				11A7587F16ECC4A800CC5AAD /* Foundation.framework in Frameworks */,
-				11A7588216ECC4A800CC5AAD /* libBBCodeStringBuilder.a in Frameworks */,
+				11A7588216ECC4A800CC5AAD /* libBBCodeString.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11070BE816ECC70100CFFF3C /* BBCodeParser */ = {
+			isa = PBXGroup;
+			children = (
+				11070BE916ECC70100CFFF3C /* BBAttribute.h */,
+				11070BEA16ECC70100CFFF3C /* BBAttribute.m */,
+				11070BEB16ECC70100CFFF3C /* BBCodeParser.h */,
+				11070BEC16ECC70100CFFF3C /* BBCodeParser.m */,
+				11070BED16ECC70100CFFF3C /* BBCodeParserDelegate.h */,
+				11070BEE16ECC70100CFFF3C /* BBElement.h */,
+				11070BEF16ECC70100CFFF3C /* BBElement.m */,
+				11070BF016ECC70100CFFF3C /* BBParsingElement.h */,
+				11070BF116ECC70100CFFF3C /* BBParsingElement.m */,
+			);
+			name = BBCodeParser;
+			path = BBCodeString/BBCodeParser;
+			sourceTree = SOURCE_ROOT;
+		};
 		11A7585E16ECC4A800CC5AAD = {
 			isa = PBXGroup;
 			children = (
-				11A7586E16ECC4A800CC5AAD /* BBCodeStringBuilder */,
-				11A7588316ECC4A800CC5AAD /* BBCodeStringBuilderTests */,
+				11A7586E16ECC4A800CC5AAD /* BBCodeString */,
+				11A7588316ECC4A800CC5AAD /* BBCodeStringTests */,
 				11A7586B16ECC4A800CC5AAD /* Frameworks */,
 				11A7586A16ECC4A800CC5AAD /* Products */,
 			);
@@ -92,8 +120,8 @@
 		11A7586A16ECC4A800CC5AAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11A7586916ECC4A800CC5AAD /* libBBCodeStringBuilder.a */,
-				11A7587A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.octest */,
+				11A7586916ECC4A800CC5AAD /* libBBCodeString.a */,
+				11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,39 +136,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11A7586E16ECC4A800CC5AAD /* BBCodeStringBuilder */ = {
+		11A7586E16ECC4A800CC5AAD /* BBCodeString */ = {
 			isa = PBXGroup;
 			children = (
-				11A7587116ECC4A800CC5AAD /* BBCodeStringBuilder.h */,
-				11A7587316ECC4A800CC5AAD /* BBCodeStringBuilder.m */,
+				11070BE816ECC70100CFFF3C /* BBCodeParser */,
+				11070BF216ECC70100CFFF3C /* BBCodeString.h */,
+				11070BF316ECC70100CFFF3C /* BBCodeString.m */,
 				11A7586F16ECC4A800CC5AAD /* Supporting Files */,
 			);
+			name = BBCodeString;
 			path = BBCodeStringBuilder;
 			sourceTree = "<group>";
 		};
 		11A7586F16ECC4A800CC5AAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				11A7587016ECC4A800CC5AAD /* BBCodeStringBuilder-Prefix.pch */,
+				11070BF916ECC70A00CFFF3C /* BBCodeString-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		11A7588316ECC4A800CC5AAD /* BBCodeStringBuilderTests */ = {
+		11A7588316ECC4A800CC5AAD /* BBCodeStringTests */ = {
 			isa = PBXGroup;
 			children = (
-				11A7588916ECC4A800CC5AAD /* BBCodeStringBuilderTests.h */,
-				11A7588A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.m */,
+				11A758AA16ECC69F00CC5AAD /* BBCodeStringTests.h */,
+				11A758AB16ECC69F00CC5AAD /* BBCodeStringTests.m */,
 				11A7588416ECC4A800CC5AAD /* Supporting Files */,
 			);
+			name = BBCodeStringTests;
 			path = BBCodeStringBuilderTests;
 			sourceTree = "<group>";
 		};
 		11A7588416ECC4A800CC5AAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				11A7588516ECC4A800CC5AAD /* BBCodeStringBuilderTests-Info.plist */,
-				11A7588616ECC4A800CC5AAD /* InfoPlist.strings */,
+				11A758AD16ECC6AB00CC5AAD /* BBCodeStringTests-Info.plist */,
+				11070BE516ECC6EB00CFFF3C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11A7586816ECC4A800CC5AAD /* BBCodeStringBuilder */ = {
+		11A7586816ECC4A800CC5AAD /* BBCodeString */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11A7588E16ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringBuilder" */;
+			buildConfigurationList = 11A7588E16ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeString" */;
 			buildPhases = (
 				11A7586516ECC4A800CC5AAD /* Sources */,
 				11A7586616ECC4A800CC5AAD /* Frameworks */,
@@ -160,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = BBCodeStringBuilder;
+			name = BBCodeString;
 			productName = BBCodeStringBuilder;
-			productReference = 11A7586916ECC4A800CC5AAD /* libBBCodeStringBuilder.a */;
+			productReference = 11A7586916ECC4A800CC5AAD /* libBBCodeString.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		11A7587916ECC4A800CC5AAD /* BBCodeStringBuilderTests */ = {
+		11A7587916ECC4A800CC5AAD /* BBCodeStringTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11A7589116ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringBuilderTests" */;
+			buildConfigurationList = 11A7589116ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringTests" */;
 			buildPhases = (
 				11A7587516ECC4A800CC5AAD /* Sources */,
 				11A7587616ECC4A800CC5AAD /* Frameworks */,
@@ -179,9 +210,9 @@
 			dependencies = (
 				11A7588116ECC4A800CC5AAD /* PBXTargetDependency */,
 			);
-			name = BBCodeStringBuilderTests;
+			name = BBCodeStringTests;
 			productName = BBCodeStringBuilderTests;
-			productReference = 11A7587A16ECC4A800CC5AAD /* BBCodeStringBuilderTests.octest */;
+			productReference = 11A7587A16ECC4A800CC5AAD /* BBCodeStringTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +224,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Miha Rataj";
 			};
-			buildConfigurationList = 11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeStringBuilder" */;
+			buildConfigurationList = 11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeString" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,8 +236,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11A7586816ECC4A800CC5AAD /* BBCodeStringBuilder */,
-				11A7587916ECC4A800CC5AAD /* BBCodeStringBuilderTests */,
+				11A7586816ECC4A800CC5AAD /* BBCodeString */,
+				11A7587916ECC4A800CC5AAD /* BBCodeStringTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A7588816ECC4A800CC5AAD /* InfoPlist.strings in Resources */,
+				11070BE716ECC6EB00CFFF3C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A7587416ECC4A800CC5AAD /* BBCodeStringBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A7588B16ECC4A800CC5AAD /* BBCodeStringBuilderTests.m in Sources */,
+				11A758AC16ECC69F00CC5AAD /* BBCodeStringTests.m in Sources */,
+				11070BF416ECC70100CFFF3C /* BBAttribute.m in Sources */,
+				11070BF516ECC70100CFFF3C /* BBCodeParser.m in Sources */,
+				11070BF616ECC70100CFFF3C /* BBElement.m in Sources */,
+				11070BF716ECC70100CFFF3C /* BBParsingElement.m in Sources */,
+				11070BF816ECC70100CFFF3C /* BBCodeString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,16 +295,16 @@
 /* Begin PBXTargetDependency section */
 		11A7588116ECC4A800CC5AAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 11A7586816ECC4A800CC5AAD /* BBCodeStringBuilder */;
+			target = 11A7586816ECC4A800CC5AAD /* BBCodeString */;
 			targetProxy = 11A7588016ECC4A800CC5AAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		11A7588616ECC4A800CC5AAD /* InfoPlist.strings */ = {
+		11070BE516ECC6EB00CFFF3C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11A7588716ECC4A800CC5AAD /* en */,
+				11070BE616ECC6EB00CFFF3C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -327,11 +362,11 @@
 		11A7588F16ECC4A800CC5AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/BBCodeStringBuilder.dst;
+				DSTROOT = /tmp/BBCodeString.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BBCodeStringBuilder/BBCodeStringBuilder-Prefix.pch";
+				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BBCodeString;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -339,11 +374,11 @@
 		11A7589016ECC4A800CC5AAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/BBCodeStringBuilder.dst;
+				DSTROOT = /tmp/BBCodeString.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BBCodeStringBuilder/BBCodeStringBuilder-Prefix.pch";
+				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BBCodeString;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -356,9 +391,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BBCodeStringBuilder/BBCodeStringBuilder-Prefix.pch";
-				INFOPLIST_FILE = "BBCodeStringBuilderTests/BBCodeStringBuilderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
+				INFOPLIST_FILE = "BBCodeStringTests/BBCodeStringTests-Info.plist";
+				PRODUCT_NAME = BBCodeStringTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -371,9 +406,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BBCodeStringBuilder/BBCodeStringBuilder-Prefix.pch";
-				INFOPLIST_FILE = "BBCodeStringBuilderTests/BBCodeStringBuilderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BBCodeString/BBCodeString-Prefix.pch";
+				INFOPLIST_FILE = "BBCodeStringTests/BBCodeStringTests-Info.plist";
+				PRODUCT_NAME = BBCodeStringTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -381,7 +416,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeStringBuilder" */ = {
+		11A7586316ECC4A800CC5AAD /* Build configuration list for PBXProject "BBCodeString" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11A7588C16ECC4A800CC5AAD /* Debug */,
@@ -390,21 +425,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11A7588E16ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringBuilder" */ = {
+		11A7588E16ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeString" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11A7588F16ECC4A800CC5AAD /* Debug */,
 				11A7589016ECC4A800CC5AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		11A7589116ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringBuilderTests" */ = {
+		11A7589116ECC4A800CC5AAD /* Build configuration list for PBXNativeTarget "BBCodeStringTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11A7589216ECC4A800CC5AAD /* Debug */,
 				11A7589316ECC4A800CC5AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
