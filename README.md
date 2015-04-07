@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/BBCodeString.svg?style=flat)](http://cocoapods.org/pods/BBCodeString)
 [![Platform](https://img.shields.io/cocoapods/p/BBCodeString.svg?style=flat)](http://cocoapods.org/pods/BBCodeString)
 
-## Usage
-
 BBCodeString is a simple library which enables you to create NSAttributedString object from bb code string.
+
+## Usage
 
 Example of use:
 
