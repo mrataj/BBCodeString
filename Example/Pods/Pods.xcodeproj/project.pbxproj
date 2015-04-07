@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017D9FC0DD79F85894F68448 /* BBCodeString.h in Headers */ = {isa = PBXBuildFile; fileRef = CD46B71CCDF439DE79707208 /* BBCodeString.h */; };
+		290638D907A10770AC6FC6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701738C332709657333E8F3 /* UIKit.framework */; };
+		2E892CE8D16F4940235791E7 /* BBElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6DD34B8944F2F6915CA939 /* BBElement.m */; };
+		3823BBB50BA0F1B7BAE8DB28 /* NSMutableAttributedString+BBCodeString.h in Headers */ = {isa = PBXBuildFile; fileRef = E761692CCA829C1F926AFE95 /* NSMutableAttributedString+BBCodeString.h */; };
+		39F0C34DAD1E710D018759FA /* BBCodeParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CC940F2F8AEF3A306AB226E3 /* BBCodeParserDelegate.h */; };
+		3BF537AB26C8367D8BD8E1C2 /* BBElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CF17B297B630075388CC9E9F /* BBElement.h */; };
+		47D4D6B96E1AD34ABB259F43 /* NSMutableAttributedString+BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F06F669072A4FEF1FB8432 /* NSMutableAttributedString+BBCodeString.m */; };
+		7910C73482D4F3853703FBA5 /* BBCodeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B3BDC70AEEB367701E2012 /* BBCodeParser.h */; };
+		797106D4FE160836A18C6CA6 /* Pods-BBCodeString-BBCodeParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DDA2210B7F826230CBB2FB /* Pods-BBCodeString-BBCodeParser-dummy.m */; };
+		7D669861E8CF37605D3F4EFF /* BBParsingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061163FDBE40FEA71BD9C7C /* BBParsingElement.m */; };
+		84BAA04DE244BE78C8F4E83B /* BBCodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8662F997EB5DC0D5C50B23DF /* BBCodeParser.m */; };
+		853EAB216B21E959FDB14392 /* Pods-BBCodeString-BBCodeString-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9230D875674D6D1BB456DA /* Pods-BBCodeString-BBCodeString-dummy.m */; };
+		87E4CC6B975865DBF163A4B7 /* BBParsingElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 3271CDC466013EE75006E4E9 /* BBParsingElement.h */; };
+		888930A07BE33B3DC88520A5 /* BBCodeStringDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA62329600BCDBC896A3B3B4 /* BBCodeStringDelegate.h */; };
+		8951143936AF39EF15DB1570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8069A905F950B6FF8B6FA5F8 /* Foundation.framework */; };
+		B0CA280CC9BC9C9CC7422886 /* BBAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 811FB86510C49B349D6D380A /* BBAttribute.m */; };
+		B2B160C54EFC4B0428BCDB6E /* BBCodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFCA545858B5BE8BFD9A60 /* BBCodeString.m */; };
+		B45925BBDBE6599E8BCA9BF2 /* BBAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = C8419D3452DEA0796ABC9380 /* BBAttribute.h */; };
+		CEB46B635574BDBE70B387C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8069A905F950B6FF8B6FA5F8 /* Foundation.framework */; };
+		DF366B2E245746FCF62BC563 /* Pods-BBCodeString-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7A048B6D80D6083D0A009 /* Pods-BBCodeString-dummy.m */; };
+		EDF83EC34CC6A20DD6C182D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8069A905F950B6FF8B6FA5F8 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E642FDF2C3EE1E6F1AE6E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBEEB7BC58276E24E54347F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A966E13FD9DBD9AFE587C1;
+			remoteInfo = "Pods-BBCodeString-BBCodeParser-BBCodeParser";
+		};
+		9B07547B9FA7252A21CB68BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBEEB7BC58276E24E54347F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A174ACE3967D6944C4C84077;
+			remoteInfo = "Pods-BBCodeString-BBCodeString-BBCodeString";
+		};
+		D5985AABDA5AE7755FA7C956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBEEB7BC58276E24E54347F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA2714E3705A34495C5BE7E3;
+			remoteInfo = "Pods-BBCodeString-BBCodeString";
+		};
+		E4DC2F0051C2105BABAF6F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBEEB7BC58276E24E54347F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0091D9ADC760D3D1589C2311;
+			remoteInfo = "Pods-BBCodeString-BBCodeParser";
+		};
+		EA678CA230D9928A12EEC660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDBEEB7BC58276E24E54347F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0091D9ADC760D3D1589C2311;
+			remoteInfo = "Pods-BBCodeString-BBCodeParser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D7A048B6D80D6083D0A009 /* Pods-BBCodeString-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BBCodeString-dummy.m"; sourceTree = "<group>"; };
+		04F4DFF1704EFBD0FE1B4245 /* libPods-BBCodeString-BBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBCodeString-BBCodeString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23298AAABE9F9260B952FF3D /* Pods-BBCodeString-BBCodeString-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString-BBCodeString-Private.xcconfig"; sourceTree = "<group>"; };
+		23AC73F588A7A94E8B2B9D2C /* Pods-BBCodeString-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BBCodeString-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2539168F2E2C7704AAB6B7B4 /* libPods-BBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBCodeString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9BEF264181169538ED5C05 /* Pods-BBCodeString-BBCodeString.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString-BBCodeString.xcconfig"; sourceTree = "<group>"; };
+		3061163FDBE40FEA71BD9C7C /* BBParsingElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBParsingElement.m; path = Pod/Classes/BBParsingElement.m; sourceTree = "<group>"; };
+		3271CDC466013EE75006E4E9 /* BBParsingElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBParsingElement.h; path = Pod/Classes/BBParsingElement.h; sourceTree = "<group>"; };
+		3C9526E379EF984C8DF3DD32 /* Pods-BBCodeString-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BBCodeString-resources.sh"; sourceTree = "<group>"; };
+		4F9230D875674D6D1BB456DA /* Pods-BBCodeString-BBCodeString-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BBCodeString-BBCodeString-dummy.m"; sourceTree = "<group>"; };
+		51FFCA545858B5BE8BFD9A60 /* BBCodeString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBCodeString.m; sourceTree = "<group>"; };
+		61C01F5AE2F7CFD422B55F01 /* Pods-BBCodeString-BBCodeParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString-BBCodeParser-Private.xcconfig"; sourceTree = "<group>"; };
+		660A8DC38D26491D80A8AC36 /* Pods-BBCodeString-BBCodeParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString-BBCodeParser.xcconfig"; sourceTree = "<group>"; };
+		6CF875D5A2EFFCD342D9602A /* Pods-BBCodeString-BBCodeParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBCodeString-BBCodeParser-prefix.pch"; sourceTree = "<group>"; };
+		6DEFD1C8B87CF2BE0A05FBC0 /* Pods-BBCodeString.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString.debug.xcconfig"; sourceTree = "<group>"; };
+		7D455428F8B78B97F2A639D4 /* Pods-BBCodeString.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBCodeString.release.xcconfig"; sourceTree = "<group>"; };
+		8069A905F950B6FF8B6FA5F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		811FB86510C49B349D6D380A /* BBAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBAttribute.m; path = Pod/Classes/BBAttribute.m; sourceTree = "<group>"; };
+		8662F997EB5DC0D5C50B23DF /* BBCodeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBCodeParser.m; path = Pod/Classes/BBCodeParser.m; sourceTree = "<group>"; };
+		88FC22782F1D8C9A1832D266 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CBF1610438B2A51317B3F93 /* BBCodeString.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeString.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B3BDC70AEEB367701E2012 /* BBCodeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBCodeParser.h; path = Pod/Classes/BBCodeParser.h; sourceTree = "<group>"; };
+		9F2F9481860B2512899FA53B /* libPods-BBCodeString-BBCodeParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBCodeString-BBCodeParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEDDB8EB91BF84A736AA7D3 /* BBCodeParser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeParser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA62329600BCDBC896A3B3B4 /* BBCodeStringDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBCodeStringDelegate.h; sourceTree = "<group>"; };
+		C0DDA2210B7F826230CBB2FB /* Pods-BBCodeString-BBCodeParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BBCodeString-BBCodeParser-dummy.m"; sourceTree = "<group>"; };
+		C8419D3452DEA0796ABC9380 /* BBAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBAttribute.h; path = Pod/Classes/BBAttribute.h; sourceTree = "<group>"; };
+		CC940F2F8AEF3A306AB226E3 /* BBCodeParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBCodeParserDelegate.h; path = Pod/Classes/BBCodeParserDelegate.h; sourceTree = "<group>"; };
+		CD46B71CCDF439DE79707208 /* BBCodeString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBCodeString.h; sourceTree = "<group>"; };
+		CD6DD34B8944F2F6915CA939 /* BBElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBElement.m; path = Pod/Classes/BBElement.m; sourceTree = "<group>"; };
+		CF17B297B630075388CC9E9F /* BBElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBElement.h; path = Pod/Classes/BBElement.h; sourceTree = "<group>"; };
+		D5F06F669072A4FEF1FB8432 /* NSMutableAttributedString+BBCodeString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+BBCodeString.m"; sourceTree = "<group>"; };
+		D62440FFEF1691F43970CBB5 /* Pods-BBCodeString-BBCodeString-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBCodeString-BBCodeString-prefix.pch"; sourceTree = "<group>"; };
+		D701738C332709657333E8F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D8D3E503348CC7089900DB09 /* Pods-BBCodeString-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBCodeString-environment.h"; sourceTree = "<group>"; };
+		E761692CCA829C1F926AFE95 /* NSMutableAttributedString+BBCodeString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+BBCodeString.h"; sourceTree = "<group>"; };
+		F5E38EA838A87247542769A9 /* Pods-BBCodeString-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BBCodeString-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		216642C5167889C982E84E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB46B635574BDBE70B387C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91268142FCFBEDA5C7CC7774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AA6DD93915EBB54D0685AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF83EC34CC6A20DD6C182D5 /* Foundation.framework in Frameworks */,
+				290638D907A10770AC6FC6C7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66CC2CF327D644E5219D7AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8951143936AF39EF15DB1570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B7CCD562AE376402633C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F77FE28D1BDC5231FEECD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15CECBA7FA909A19874C0FC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05C4DCB7ED01D61348A2963D = {
+			isa = PBXGroup;
+			children = (
+				88FC22782F1D8C9A1832D266 /* Podfile */,
+				B63550BD4B125B5B478858D9 /* Development Pods */,
+				00F77FE28D1BDC5231FEECD3 /* Frameworks */,
+				86ED565E47F5C045C9746F92 /* Pods */,
+				98F2D1FC4ADC83CFF83B5BBD /* Products */,
+				830C30A33FA2A982912207F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		59F9D6176022F224FD496640 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				660A8DC38D26491D80A8AC36 /* Pods-BBCodeString-BBCodeParser.xcconfig */,
+				61C01F5AE2F7CFD422B55F01 /* Pods-BBCodeString-BBCodeParser-Private.xcconfig */,
+				C0DDA2210B7F826230CBB2FB /* Pods-BBCodeString-BBCodeParser-dummy.m */,
+				6CF875D5A2EFFCD342D9602A /* Pods-BBCodeString-BBCodeParser-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-BBCodeString-BBCodeParser";
+			sourceTree = "<group>";
+		};
+		830C30A33FA2A982912207F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA75C53A8ACEB6FC9C4F94E2 /* Pods-BBCodeString */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		86ED565E47F5C045C9746F92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD9F333FFACC7120A8C74F4 /* BBCodeParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D31416596E3BCF2FE69FD7B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BEF264181169538ED5C05 /* Pods-BBCodeString-BBCodeString.xcconfig */,
+				23298AAABE9F9260B952FF3D /* Pods-BBCodeString-BBCodeString-Private.xcconfig */,
+				4F9230D875674D6D1BB456DA /* Pods-BBCodeString-BBCodeString-dummy.m */,
+				D62440FFEF1691F43970CBB5 /* Pods-BBCodeString-BBCodeString-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-BBCodeString-BBCodeString";
+			sourceTree = "<group>";
+		};
+		8FEFA51A74329445CDEF4BBA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F042174210E9281849A362D3 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		98F2D1FC4ADC83CFF83B5BBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FEDDB8EB91BF84A736AA7D3 /* BBCodeParser.bundle */,
+				8CBF1610438B2A51317B3F93 /* BBCodeString.bundle */,
+				2539168F2E2C7704AAB6B7B4 /* libPods-BBCodeString.a */,
+				9F2F9481860B2512899FA53B /* libPods-BBCodeString-BBCodeParser.a */,
+				04F4DFF1704EFBD0FE1B4245 /* libPods-BBCodeString-BBCodeString.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B63550BD4B125B5B478858D9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D76230C36951E268B106F265 /* BBCodeString */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CA75C53A8ACEB6FC9C4F94E2 /* Pods-BBCodeString */ = {
+			isa = PBXGroup;
+			children = (
+				23AC73F588A7A94E8B2B9D2C /* Pods-BBCodeString-acknowledgements.markdown */,
+				F5E38EA838A87247542769A9 /* Pods-BBCodeString-acknowledgements.plist */,
+				04D7A048B6D80D6083D0A009 /* Pods-BBCodeString-dummy.m */,
+				D8D3E503348CC7089900DB09 /* Pods-BBCodeString-environment.h */,
+				3C9526E379EF984C8DF3DD32 /* Pods-BBCodeString-resources.sh */,
+				6DEFD1C8B87CF2BE0A05FBC0 /* Pods-BBCodeString.debug.xcconfig */,
+				7D455428F8B78B97F2A639D4 /* Pods-BBCodeString.release.xcconfig */,
+			);
+			name = "Pods-BBCodeString";
+			path = "Target Support Files/Pods-BBCodeString";
+			sourceTree = "<group>";
+		};
+		D76230C36951E268B106F265 /* BBCodeString */ = {
+			isa = PBXGroup;
+			children = (
+				8FEFA51A74329445CDEF4BBA /* Pod */,
+				8D31416596E3BCF2FE69FD7B /* Support Files */,
+			);
+			name = BBCodeString;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E15CECBA7FA909A19874C0FC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8069A905F950B6FF8B6FA5F8 /* Foundation.framework */,
+				D701738C332709657333E8F3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F042174210E9281849A362D3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD46B71CCDF439DE79707208 /* BBCodeString.h */,
+				51FFCA545858B5BE8BFD9A60 /* BBCodeString.m */,
+				AA62329600BCDBC896A3B3B4 /* BBCodeStringDelegate.h */,
+				E761692CCA829C1F926AFE95 /* NSMutableAttributedString+BBCodeString.h */,
+				D5F06F669072A4FEF1FB8432 /* NSMutableAttributedString+BBCodeString.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FCD9F333FFACC7120A8C74F4 /* BBCodeParser */ = {
+			isa = PBXGroup;
+			children = (
+				C8419D3452DEA0796ABC9380 /* BBAttribute.h */,
+				811FB86510C49B349D6D380A /* BBAttribute.m */,
+				92B3BDC70AEEB367701E2012 /* BBCodeParser.h */,
+				8662F997EB5DC0D5C50B23DF /* BBCodeParser.m */,
+				CC940F2F8AEF3A306AB226E3 /* BBCodeParserDelegate.h */,
+				CF17B297B630075388CC9E9F /* BBElement.h */,
+				CD6DD34B8944F2F6915CA939 /* BBElement.m */,
+				3271CDC466013EE75006E4E9 /* BBParsingElement.h */,
+				3061163FDBE40FEA71BD9C7C /* BBParsingElement.m */,
+				59F9D6176022F224FD496640 /* Support Files */,
+			);
+			path = BBCodeParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E61BB0F8ADF50579639A452C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45925BBDBE6599E8BCA9BF2 /* BBAttribute.h in Headers */,
+				7910C73482D4F3853703FBA5 /* BBCodeParser.h in Headers */,
+				39F0C34DAD1E710D018759FA /* BBCodeParserDelegate.h in Headers */,
+				3BF537AB26C8367D8BD8E1C2 /* BBElement.h in Headers */,
+				87E4CC6B975865DBF163A4B7 /* BBParsingElement.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3421DB5E5EB09500472EE21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017D9FC0DD79F85894F68448 /* BBCodeString.h in Headers */,
+				888930A07BE33B3DC88520A5 /* BBCodeStringDelegate.h in Headers */,
+				3823BBB50BA0F1B7BAE8DB28 /* NSMutableAttributedString+BBCodeString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0091D9ADC760D3D1589C2311 /* Pods-BBCodeString-BBCodeParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E361525041DB20A1D387B5 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeParser" */;
+			buildPhases = (
+				055BDBE9392DAD598AD76379 /* Sources */,
+				216642C5167889C982E84E4B /* Frameworks */,
+				E61BB0F8ADF50579639A452C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4A41E1F20FBAB16A3F76EB /* PBXTargetDependency */,
+			);
+			name = "Pods-BBCodeString-BBCodeParser";
+			productName = "Pods-BBCodeString-BBCodeParser";
+			productReference = 9F2F9481860B2512899FA53B /* libPods-BBCodeString-BBCodeParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		418472DB66AF9ECCD1B8F6C3 /* Pods-BBCodeString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA3C1E0E217C8B5A9576C55 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString" */;
+			buildPhases = (
+				372ACC24F786F54B8C7E101B /* Sources */,
+				A66CC2CF327D644E5219D7AC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B4EF775BCAB6955FC926FA7 /* PBXTargetDependency */,
+				7310D9D311CC386C6A7BD381 /* PBXTargetDependency */,
+			);
+			name = "Pods-BBCodeString";
+			productName = "Pods-BBCodeString";
+			productReference = 2539168F2E2C7704AAB6B7B4 /* libPods-BBCodeString.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A174ACE3967D6944C4C84077 /* Pods-BBCodeString-BBCodeString-BBCodeString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F12D009C8F6492A62E287F4 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeString-BBCodeString" */;
+			buildPhases = (
+				22434D1802F63BF5137607BE /* Sources */,
+				D7B7CCD562AE376402633C40 /* Frameworks */,
+				73BE8409959A53071A0816C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BBCodeString-BBCodeString-BBCodeString";
+			productName = "Pods-BBCodeString-BBCodeString-BBCodeString";
+			productReference = 8CBF1610438B2A51317B3F93 /* BBCodeString.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AA2714E3705A34495C5BE7E3 /* Pods-BBCodeString-BBCodeString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28297E27D7B641823DCE7A4 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeString" */;
+			buildPhases = (
+				C44BC4CE833FB582BFA48E8D /* Sources */,
+				94AA6DD93915EBB54D0685AE /* Frameworks */,
+				F3421DB5E5EB09500472EE21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC9BCB2F3A87184F8D5BF2E /* PBXTargetDependency */,
+				E92EC5B4E34BB7B734CF910C /* PBXTargetDependency */,
+			);
+			name = "Pods-BBCodeString-BBCodeString";
+			productName = "Pods-BBCodeString-BBCodeString";
+			productReference = 04F4DFF1704EFBD0FE1B4245 /* libPods-BBCodeString-BBCodeString.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5A966E13FD9DBD9AFE587C1 /* Pods-BBCodeString-BBCodeParser-BBCodeParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE9A373A9573D1996EE426B /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeParser-BBCodeParser" */;
+			buildPhases = (
+				635E843C5B5A940E3EE5BE48 /* Sources */,
+				91268142FCFBEDA5C7CC7774 /* Frameworks */,
+				2EE8A61122344F6519F9DE6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BBCodeString-BBCodeParser-BBCodeParser";
+			productName = "Pods-BBCodeString-BBCodeParser-BBCodeParser";
+			productReference = 9FEDDB8EB91BF84A736AA7D3 /* BBCodeParser.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDBEEB7BC58276E24E54347F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 3CD21914630C7A755B3BEE9B /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05C4DCB7ED01D61348A2963D;
+			productRefGroup = 98F2D1FC4ADC83CFF83B5BBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418472DB66AF9ECCD1B8F6C3 /* Pods-BBCodeString */,
+				0091D9ADC760D3D1589C2311 /* Pods-BBCodeString-BBCodeParser */,
+				F5A966E13FD9DBD9AFE587C1 /* Pods-BBCodeString-BBCodeParser-BBCodeParser */,
+				AA2714E3705A34495C5BE7E3 /* Pods-BBCodeString-BBCodeString */,
+				A174ACE3967D6944C4C84077 /* Pods-BBCodeString-BBCodeString-BBCodeString */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EE8A61122344F6519F9DE6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BE8409959A53071A0816C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		055BDBE9392DAD598AD76379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CA280CC9BC9C9CC7422886 /* BBAttribute.m in Sources */,
+				84BAA04DE244BE78C8F4E83B /* BBCodeParser.m in Sources */,
+				2E892CE8D16F4940235791E7 /* BBElement.m in Sources */,
+				7D669861E8CF37605D3F4EFF /* BBParsingElement.m in Sources */,
+				797106D4FE160836A18C6CA6 /* Pods-BBCodeString-BBCodeParser-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22434D1802F63BF5137607BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372ACC24F786F54B8C7E101B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF366B2E245746FCF62BC563 /* Pods-BBCodeString-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635E843C5B5A940E3EE5BE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44BC4CE833FB582BFA48E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B160C54EFC4B0428BCDB6E /* BBCodeString.m in Sources */,
+				47D4D6B96E1AD34ABB259F43 /* NSMutableAttributedString+BBCodeString.m in Sources */,
+				853EAB216B21E959FDB14392 /* Pods-BBCodeString-BBCodeString-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B4EF775BCAB6955FC926FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BBCodeString-BBCodeParser";
+			target = 0091D9ADC760D3D1589C2311 /* Pods-BBCodeString-BBCodeParser */;
+			targetProxy = E4DC2F0051C2105BABAF6F58 /* PBXContainerItemProxy */;
+		};
+		7310D9D311CC386C6A7BD381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BBCodeString-BBCodeString";
+			target = AA2714E3705A34495C5BE7E3 /* Pods-BBCodeString-BBCodeString */;
+			targetProxy = D5985AABDA5AE7755FA7C956 /* PBXContainerItemProxy */;
+		};
+		9A4A41E1F20FBAB16A3F76EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BBCodeString-BBCodeParser-BBCodeParser";
+			target = F5A966E13FD9DBD9AFE587C1 /* Pods-BBCodeString-BBCodeParser-BBCodeParser */;
+			targetProxy = 0E642FDF2C3EE1E6F1AE6E83 /* PBXContainerItemProxy */;
+		};
+		E92EC5B4E34BB7B734CF910C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BBCodeString-BBCodeString-BBCodeString";
+			target = A174ACE3967D6944C4C84077 /* Pods-BBCodeString-BBCodeString-BBCodeString */;
+			targetProxy = 9B07547B9FA7252A21CB68BD /* PBXContainerItemProxy */;
+		};
+		EDC9BCB2F3A87184F8D5BF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BBCodeString-BBCodeParser";
+			target = 0091D9ADC760D3D1589C2311 /* Pods-BBCodeString-BBCodeParser */;
+			targetProxy = EA678CA230D9928A12EEC660 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		014A06F8DA72A05F382642D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23298AAABE9F9260B952FF3D /* Pods-BBCodeString-BBCodeString-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BBCodeString-BBCodeString/Pods-BBCodeString-BBCodeString-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1AEC2C3B8231C201FF1FEB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BBCodeParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		25702C156B99D9EF694731CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4FCFF8CB916C605AECCCF7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D455428F8B78B97F2A639D4 /* Pods-BBCodeString.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		571DE6815C0EB9F223F0A09E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BBCodeParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5C95053C7E6A1797BF3CA5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23298AAABE9F9260B952FF3D /* Pods-BBCodeString-BBCodeString-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BBCodeString-BBCodeString/Pods-BBCodeString-BBCodeString-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68F38130B69FAFDE0BBD3579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEFD1C8B87CF2BE0A05FBC0 /* Pods-BBCodeString.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77325C0396C33E533BA65FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BBCodeString;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		963D1DBCA2F0EB170FC2E872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C01F5AE2F7CFD422B55F01 /* Pods-BBCodeString-BBCodeParser-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BBCodeString-BBCodeParser/Pods-BBCodeString-BBCodeParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		990D31E7678B3714B32F386A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C01F5AE2F7CFD422B55F01 /* Pods-BBCodeString-BBCodeParser-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BBCodeString-BBCodeParser/Pods-BBCodeString-BBCodeParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE40F4A96468CCCBBCB88CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BBCodeString;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FA60DE64448118845DCE0BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA3C1E0E217C8B5A9576C55 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F38130B69FAFDE0BBD3579 /* Debug */,
+				4FCFF8CB916C605AECCCF7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F12D009C8F6492A62E287F4 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeString-BBCodeString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE40F4A96468CCCBBCB88CEE /* Debug */,
+				77325C0396C33E533BA65FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E361525041DB20A1D387B5 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990D31E7678B3714B32F386A /* Debug */,
+				963D1DBCA2F0EB170FC2E872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD21914630C7A755B3BEE9B /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25702C156B99D9EF694731CC /* Debug */,
+				FA60DE64448118845DCE0BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE9A373A9573D1996EE426B /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeParser-BBCodeParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEC2C3B8231C201FF1FEB68 /* Debug */,
+				571DE6815C0EB9F223F0A09E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28297E27D7B641823DCE7A4 /* Build configuration list for PBXNativeTarget "Pods-BBCodeString-BBCodeString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C95053C7E6A1797BF3CA5A2 /* Debug */,
+				014A06F8DA72A05F382642D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDBEEB7BC58276E24E54347F /* Project object */;
+}

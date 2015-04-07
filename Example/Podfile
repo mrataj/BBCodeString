@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'BBCodeString', :exclusive => true do
+  pod "BBCodeString", :path => "../"
+
+  
+end

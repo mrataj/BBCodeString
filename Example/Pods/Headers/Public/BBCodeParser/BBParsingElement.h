@@ -1,0 +1,1 @@
+../../../BBCodeParser/Pod/Classes/BBParsingElement.h
