@@ -8,10 +8,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   BBCodeString:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   BBCodeParser: d5f83082b904b5af59f832f10c81606c8553777e
-  BBCodeString: d568b4dcf536919af1c02ccd2d996c17efe24671
+  BBCodeString: f6327ae22f7afe162ae850d764664155475dc5ff
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.1
