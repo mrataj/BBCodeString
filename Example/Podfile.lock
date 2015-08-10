@@ -1,6 +1,6 @@
 PODS:
   - BBCodeParser (0.1.0)
-  - BBCodeString (0.1.0):
+  - BBCodeString (0.2.0):
     - BBCodeParser (~> 0.1.0)
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BBCodeParser: d5f83082b904b5af59f832f10c81606c8553777e
-  BBCodeString: d568b4dcf536919af1c02ccd2d996c17efe24671
+  BBCodeString: d1e2de2d622de05facc6638430d51e2a8231535f
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.38.0
