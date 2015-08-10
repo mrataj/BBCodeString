@@ -95,12 +95,34 @@
     if ([text length] == 0)
         return;
     
-    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:text];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     
-    [string setFont:[self.layoutProvider getFont:element]];
-    [string setColor:[self.layoutProvider getTextColor:element]];
+    // Backwards compatibility for version 0.1.0
+    if ([self.layoutProvider respondsToSelector:@selector(getFont:)])
+    {
+        [attributedString setFont:[self.layoutProvider getFont:element]];
+    }
     
-    [_attributedString appendAttributedString:string];
+    // Backwards compatibility for version 0.1.0
+    if ([self.layoutProvider respondsToSelector:@selector(getTextColor:)])
+    {
+        [attributedString setColor:[self.layoutProvider getTextColor:element]];
+    }
+    
+    // This condition is just because of backwards compatibility for version 0.1.0
+    if ([self.layoutProvider respondsToSelector:@selector(getAttributesForElement:)])
+    {
+        NSDictionary *attributes = [self.layoutProvider getAttributesForElement:element];
+        for (NSString *attributeName in attributes.allKeys)
+        {
+            NSRange range = NSMakeRange(0, attributedString.string.length);
+            [attributedString addAttribute:attributeName
+                                     value:[attributes objectForKey:attributeName]
+                                     range:range];
+        }
+    }
+    
+    [_attributedString appendAttributedString:attributedString];
 }
 
 @end

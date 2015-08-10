@@ -23,7 +23,7 @@
     NSRange range = NSMakeRange(0, [self.string length]);
     [self addAttribute:NSForegroundColorAttributeName
                  value:color
-                 range:range];    
+                 range:range];
 }
 
 @end

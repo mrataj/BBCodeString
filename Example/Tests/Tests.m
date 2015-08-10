@@ -77,4 +77,12 @@
             nil];
 }
 
+- (NSDictionary *)getAttributesForElement:(BBElement *)element
+{
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [UIColor redColor], NSForegroundColorAttributeName,
+                                nil];
+    return dictionary;
+}
+
 @end
