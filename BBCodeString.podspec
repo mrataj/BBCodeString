@@ -9,11 +9,11 @@
 
 Pod::Spec.new do |s|
   s.name             = "BBCodeString"
-  s.version          = "0.1.0"
-  s.summary          = "BBCodeString is a simple library which enables you to create NSAttributedString object from bb code string."
+  s.version          = "0.2.0"
+  s.summary          = "BBCodeString is a simple library which enables you to create NSAttributedString object from the BBCode string."
   s.description      = <<-DESC
 
-BBCodeString is a simple library which enables you to create NSAttributedString object from bb code string.
+BBCodeString is a cool lightweight library which enables you to create NSAttributedString object from the BBCode string.
 
                        DESC
   s.homepage         = "https://github.com/mrataj/BBCodeString"
