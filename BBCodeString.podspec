@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BBCodeString"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "BBCodeString is a simple library which enables you to create NSAttributedString object from bb code string."
   s.description      = <<-DESC
 
@@ -33,5 +33,5 @@ BBCodeString is a simple library which enables you to create NSAttributedString 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'BBCodeParser', '~> 0.1.1'
+  s.dependency 'BBCodeParser', '~> 0.1.2'
 end
