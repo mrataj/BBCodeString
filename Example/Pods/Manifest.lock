@@ -1,7 +1,7 @@
 PODS:
-  - BBCodeParser (0.1.0)
+  - BBCodeParser (0.1.2)
   - BBCodeString (0.2.0):
-    - BBCodeParser (~> 0.1.0)
+    - BBCodeParser (~> 0.1.2)
 
 DEPENDENCIES:
   - BBCodeString (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BBCodeParser: d5f83082b904b5af59f832f10c81606c8553777e
-  BBCodeString: d1e2de2d622de05facc6638430d51e2a8231535f
+  BBCodeParser: 5c78c6a75d8eae5a4cff8cdb77375bffee5df490
+  BBCodeString: 68e2468a6649f738bd7cb32ca27f64eb279d9df1
 
-COCOAPODS: 0.38.0
+COCOAPODS: 0.37.1

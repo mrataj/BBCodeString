@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CF659CF1B6651AD00D2EFEF /* BBCodeString_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF659CE1B6651AD00D2EFEF /* BBCodeString_OSX.m */; };
 		34EA961222C40BA4C220A131 /* libPods-BBCodeString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDFFBB7FE21E4F7AF2B2821 /* libPods-BBCodeString.a */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -18,6 +19,9 @@
 /* Begin PBXFileReference section */
 		09E2AFB405CB2016C7642620 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		171C9A947A19556870817375 /* BBCodeString.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BBCodeString.podspec; path = ../BBCodeString.podspec; sourceTree = "<group>"; };
+		2CF659CA1B6651AD00D2EFEF /* BBCodeString_OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCodeString_OSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF659CD1B6651AD00D2EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF659CE1B6651AD00D2EFEF /* BBCodeString_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCodeString_OSX.m; sourceTree = "<group>"; };
 		5EE672CBE8007EDB49BA571F /* Pods-BBCodeString.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCodeString.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCodeString/Pods-BBCodeString.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BBCodeString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCodeString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2CF659C71B6651AD00D2EFEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AB195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,11 +60,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CF659CB1B6651AD00D2EFEF /* BBCodeString_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				2CF659CE1B6651AD00D2EFEF /* BBCodeString_OSX.m */,
+				2CF659CC1B6651AD00D2EFEF /* Supporting Files */,
+			);
+			path = BBCodeString_OSX;
+			sourceTree = "<group>";
+		};
+		2CF659CC1B6651AD00D2EFEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF659CD1B6651AD00D2EFEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
+				2CF659CB1B6651AD00D2EFEF /* BBCodeString_OSX */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				7BD8B67E6FF965F0F171A9DA /* Pods */,
@@ -65,6 +94,7 @@
 			children = (
 				6003F58A195388D20070C39A /* BBCodeString.app */,
 				6003F5AE195388D20070C39A /* BBCodeString.xctest */,
+				2CF659CA1B6651AD00D2EFEF /* BBCodeString_OSX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +152,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2CF659C91B6651AD00D2EFEF /* BBCodeString_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF659D21B6651AD00D2EFEF /* Build configuration list for PBXNativeTarget "BBCodeString_OSX" */;
+			buildPhases = (
+				2CF659C61B6651AD00D2EFEF /* Sources */,
+				2CF659C71B6651AD00D2EFEF /* Frameworks */,
+				2CF659C81B6651AD00D2EFEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BBCodeString_OSX;
+			productName = BBCodeString_OSX;
+			productReference = 2CF659CA1B6651AD00D2EFEF /* BBCodeString_OSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6003F5AD195388D20070C39A /* BBCodeString */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "BBCodeString" */;
@@ -151,6 +198,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Miha Rataj";
 				TargetAttributes = {
+					2CF659C91B6651AD00D2EFEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -170,11 +220,19 @@
 			projectRoot = "";
 			targets = (
 				6003F5AD195388D20070C39A /* BBCodeString */,
+				2CF659C91B6651AD00D2EFEF /* BBCodeString_OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2CF659C81B6651AD00D2EFEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AC195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +277,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CF659C61B6651AD00D2EFEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF659CF1B6651AD00D2EFEF /* BBCodeString_OSX.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AA195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +307,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2CF659D01B6651AD00D2EFEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BBCodeString_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CF659D11B6651AD00D2EFEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BBCodeString_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +466,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CF659D21B6651AD00D2EFEF /* Build configuration list for PBXNativeTarget "BBCodeString_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF659D01B6651AD00D2EFEF /* Debug */,
+				2CF659D11B6651AD00D2EFEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "BBCodeString" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
