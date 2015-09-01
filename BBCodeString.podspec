@@ -22,7 +22,8 @@ BBCodeString is a cool lightweight library which enables you to create NSAttribu
   s.source           = { :git => "https://github.com/mrataj/BBCodeString.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/miharataj'
 
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -32,5 +33,5 @@ BBCodeString is a cool lightweight library which enables you to create NSAttribu
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'BBCodeParser', '~> 0.1.0'
+  s.dependency 'BBCodeParser', '~> 0.1.2'
 end
