@@ -58,7 +58,8 @@
     NSArray *matches = [regex matchesInString:element.format options:0 range:NSMakeRange(0, [element.format length])];
     if ([matches count] < 1)
     {
-        [self createLabel:element.text forElement:element];
+        NSString *text = [self getTextForElement:element];
+        [self createLabel:text forElement:element];
         return;
     }
     
@@ -87,7 +88,25 @@
     
     NSString *word = [element.format substringFromIndex:previousIndex];
     if ([word length] > 0)
+    {
         [self createLabel:word forElement:element];
+    }
+}
+
+- (NSString *)getTextForElement:(BBElement *)element
+{
+    // If the layout provider defines its own text to display, return this text.
+    if ([self.layoutProvider respondsToSelector:@selector(getTextForElement:)])
+    {
+        NSString *displayedText = [self.layoutProvider getTextForElement:element];
+        if (displayedText != nil)
+        {
+            return displayedText;
+        }
+    }
+    
+    // Otherwise return the default text of the element.
+    return element.text;
 }
 
 - (void)createLabel:(NSString *)text forElement:(BBElement *)element

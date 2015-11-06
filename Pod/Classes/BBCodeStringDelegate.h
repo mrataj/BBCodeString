@@ -15,6 +15,9 @@
 
 @optional
 
+/** Returns the text which will be displayed for the given BBCode element. **/
+- (NSString *)getTextForElement:(BBElement *)element;
+
 /** Deprecated. Returns the font for the given BBCode element. **/
 - (UIFont *)getFont:(BBElement *)element;
 
