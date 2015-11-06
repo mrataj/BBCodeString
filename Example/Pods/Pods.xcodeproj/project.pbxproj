@@ -64,6 +64,7 @@
 /* Begin PBXFileReference section */
 		02A909B44F9D90824E6A0977 /* libPods-BBCodeString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBCodeString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		039F69E9980D3CECA22D3EAE /* Pods-BBCodeString-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BBCodeString-dummy.m"; sourceTree = "<group>"; };
+		11150DD11BECE4DE0026E907 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		140236424EB20C5E62885CB7 /* BBCodeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBCodeParser.m; path = Pod/Classes/BBCodeParser.m; sourceTree = "<group>"; };
 		17828453B7EA97F1A82E5AD2 /* Pods-BBCodeString-BBCodeParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBCodeString-BBCodeParser-prefix.pch"; sourceTree = "<group>"; };
 		1BF1BD35BA8C38AAD4DD4AF2 /* BBElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBElement.m; path = Pod/Classes/BBElement.m; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 		62F8C8C2C592A13D27401247 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11150DD11BECE4DE0026E907 /* UIKit.framework */,
 				9C8A3B6A4729397372462556 /* iOS */,
 			);
 			name = Frameworks;

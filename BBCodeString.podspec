@@ -23,7 +23,7 @@ BBCodeString is a cool lightweight library which enables you to create NSAttribu
   s.social_media_url = 'https://twitter.com/miharataj'
 
   s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.9'
+#  s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
