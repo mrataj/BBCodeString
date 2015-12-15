@@ -69,6 +69,7 @@
         NSRange range = [match range];
         
         NSString *word = [element.format substringWithRange:NSMakeRange(previousIndex, range.location - previousIndex)];
+        word = [self getTextForElement:element];
         [self createLabel:word forElement:element];
         
         NSString *tag = [element.format substringWithRange:range];
