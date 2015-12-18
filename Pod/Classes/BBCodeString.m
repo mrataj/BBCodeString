@@ -131,7 +131,12 @@
         [attributedString setColor:[self.layoutProvider getTextColor:element]];
     }
     
-    // This condition is just because of backwards compatibility for version 0.1.0
+    if ([self.layoutProvider respondsToSelector:@selector(getCustomDefinedAttributedString:)]) {
+        NSMutableAttributedString * customAttributedString = [self.layoutProvider getCustomDefinedAttributedString:element];
+        if (customAttributedString != nil) {
+            attributedString = customAttributedString;
+        }
+    }
     if ([self.layoutProvider respondsToSelector:@selector(getAttributesForElement:)])
     {
         NSDictionary *attributes = [self.layoutProvider getAttributesForElement:element];
