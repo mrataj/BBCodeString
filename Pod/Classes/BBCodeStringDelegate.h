@@ -18,14 +18,14 @@
 /** Returns the text which will be displayed for the given BBCode element. **/
 - (NSString *)getTextForElement:(BBElement *)element;
 
+/** Returns the attributed text which will be displayed for the given BBCode element. **/
+- (NSAttributedString *)getAttributedTextForElement:(BBElement *)element;
+
 /** Deprecated. Returns the font for the given BBCode element. **/
 - (UIFont *)getFont:(BBElement *)element;
 
 /** Deprecated. Returns the text color for the given BBCode element. **/
 - (UIColor *)getTextColor:(BBElement *)element;
-
-/** Can handle custom behavior if needed. **/
-- (NSMutableAttributedString *)getCustomDefinedAttributedString:(BBElement *)element;
 
 @required
 

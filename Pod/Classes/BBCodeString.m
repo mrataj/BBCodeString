@@ -58,8 +58,8 @@
     NSArray *matches = [regex matchesInString:element.format options:0 range:NSMakeRange(0, [element.format length])];
     if ([matches count] < 1)
     {
-        NSString *text = [self getTextForElement:element];
-        [self createLabel:text forElement:element];
+        NSAttributedString *attributedText = [self getTextForElement:element];
+        [self appendAttributedText:attributedText forElement:element];
         return;
     }
     
@@ -69,10 +69,12 @@
         NSRange range = [match range];
         
         NSString *word = [element.format substringWithRange:NSMakeRange(previousIndex, range.location - previousIndex)];
-        if (![word isEqualToString:@""] && ![element.tag isEqualToString:@""]) {
-            word = [self getTextForElement:element];
+        NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:word];
+        if (attributedText.string.length != 0 && ![element.tag isEqualToString:@""])
+        {
+            attributedText = [self getTextForElement:element];
         }
-        [self createLabel:word forElement:element];
+        [self appendAttributedText:attributedText forElement:element];
         
         NSString *tag = [element.format substringWithRange:range];
         
@@ -92,32 +94,50 @@
     NSString *word = [element.format substringFromIndex:previousIndex];
     if ([word length] > 0)
     {
-        [self createLabel:word forElement:element];
+        [self appendText:word forElement:element];
     }
 }
 
-- (NSString *)getTextForElement:(BBElement *)element
+- (NSAttributedString *)getTextForElement:(BBElement *)element
 {
-    // If the layout provider defines its own text to display, return this text.
-    if ([self.layoutProvider respondsToSelector:@selector(getTextForElement:)])
+    // If the layout provider defines its own attributed text to display, return this text.
+    if ([self.layoutProvider respondsToSelector:@selector(getAttributedTextForElement:)])
     {
-        NSString *displayedText = [self.layoutProvider getTextForElement:element];
+        NSAttributedString *displayedText = [self.layoutProvider getAttributedTextForElement:element];
         if (displayedText != nil)
         {
             return displayedText;
         }
     }
     
+    // If the layout provider defines its own text to display, return this text.
+    if ([self.layoutProvider respondsToSelector:@selector(getTextForElement:)])
+    {
+        NSString *displayedText = [self.layoutProvider getTextForElement:element];
+        if (displayedText != nil)
+        {
+            return [[NSAttributedString alloc] initWithString:displayedText];
+        }
+    }
+    
     // Otherwise return the default text of the element.
-    return element.text;
+    return [[NSAttributedString alloc] initWithString:element.text];
 }
 
-- (void)createLabel:(NSString *)text forElement:(BBElement *)element
+- (void)appendText:(NSString *)text forElement:(BBElement *)element
 {
-    if ([text length] == 0)
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text];
+    [self appendAttributedText:attributedText forElement:element];
+}
+
+- (void)appendAttributedText:(NSAttributedString *)text forElement:(BBElement *)element
+{
+    if (text.length == 0)
+    {
         return;
+    }
     
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:text];
     
     // Backwards compatibility for version 0.1.0
     if ([self.layoutProvider respondsToSelector:@selector(getFont:)])
@@ -131,12 +151,6 @@
         [attributedString setColor:[self.layoutProvider getTextColor:element]];
     }
     
-    if ([self.layoutProvider respondsToSelector:@selector(getCustomDefinedAttributedString:)]) {
-        NSMutableAttributedString * customAttributedString = [self.layoutProvider getCustomDefinedAttributedString:element];
-        if (customAttributedString != nil) {
-            attributedString = customAttributedString;
-        }
-    }
     if ([self.layoutProvider respondsToSelector:@selector(getAttributesForElement:)])
     {
         NSDictionary *attributes = [self.layoutProvider getAttributesForElement:element];
