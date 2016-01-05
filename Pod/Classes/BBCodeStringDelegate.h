@@ -24,6 +24,9 @@
 /** Deprecated. Returns the text color for the given BBCode element. **/
 - (UIColor *)getTextColor:(BBElement *)element;
 
+/** Can handle custom behavior if needed. **/
+- (NSMutableAttributedString *)getCustomDefinedAttributedString:(BBElement *)element;
+
 @required
 
 /** Returns the whitelist of the BBCode tags your code supports. **/
