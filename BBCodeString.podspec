@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BBCodeString"
-  s.version          = "0.2.1"
+  s.version          = "0.2.2"
   s.summary          = "BBCodeString is a simple library which enables you to create NSAttributedString object from the BBCode string."
   s.description      = <<-DESC
 
